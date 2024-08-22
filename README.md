@@ -1,3 +1,6 @@
+<img src="https://pixabay.com/pt/illustrations/seguran%C3%A7a-castelo-seguro-internet-1202344/">
+
+
 <h1>Decodificador de Texto </h1>
 
 <h2>🔖 Sobre</h2>
