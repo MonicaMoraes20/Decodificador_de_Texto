@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+/*el ram es para adaptarse a als configuracion de tamaños de letras del navegador */
+/* Variables para usar en todo el codigo*/
+:root{
+    --cor-primaria:#EEEEEE;
+    --cor-secundaria: #201E43;
+    --cor-terciaria: #134B70;
+
+    --fonte-principal: 'Times New Roman ', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    
+    
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    margin: 0;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px; 
+    height: auto; 
+   
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+
+    
+}
+
+.input-section {
+    flex: 2;
+    margin-right: 80px;
+
+}
+
+/* Estilo para centrar y animar el h2 */
+.input-section h2 {
+    font-size: 40px;
+   
+    font-family: "Homer Simpson UI";
+    color: var(--cor-primaria);
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+/* Definición de la animación */
+@keyframes slideIn {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 3;
+    }
+}
+
+
+
+
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    resize: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color:#E0E0E0
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+    top: 885px;
+    
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px var(--cor-terciaria);
+}
+
+
+
+
+
+.criptografar {
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+.descriptografar {
+    background-color: #6c757d;
+    color: white;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--cor-primaria);
+    
+}
+
+.output-section {
+    flex: 1;
+    background-color: #E0E0E0;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.output-container {
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+#resultado {
+    font-size: 20px;
+    color: #020202;
+    word-wrap: break-word;
+}
+
+.output-note {
+    font-size: 14px;
+    color: #666;
+}
+
+.image-container {
+    max-width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.rodape{
+   
+    padding: px;
+    margin: 0px;
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 400px;
+    box-shadow: 0px 4px 6px var(--cor-terciaria);
+
+}
+.rodape p {
+    display: inline-block;
+    position: absolute;
+    will-change: transform; 
+    animation: scroll-text 15s linear infinite; 
+}
+
+
+/* Animación para desplazar el texto */
+@keyframes scroll-text {
+    from {
+        transform: translateX(100%); 
+    }
+    to {
+        transform: translateX(-100%); 
+    }
+}
+       
+
+@media (max-width: 576px) {
+    .input-section h2 {
+        font-size: 18px;
+    }
+    
+    .buttons {
+        gap: 12px;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    textarea {
+        height: 120px;
+    }
+
+    #resultado {
+        font-size: 10px;
+    }
+
+    .rodape {
+        font-size: 18px;
+    }
+}
