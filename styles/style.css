@@ -144,6 +144,23 @@ textarea {
     word-wrap: break-word;
 }
 
+
+.btn.copiar {
+    background-color: var(--cor-terciaria); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    font-size: 16px; 
+}
+
+.btn.copiar:hover {
+    background-color: var(--cor-secundaria); 
+}
+
+
 .output-note {
     font-size: 14px;
     color: var(--cor-primaria);
