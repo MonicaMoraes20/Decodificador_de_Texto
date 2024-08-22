@@ -9,19 +9,24 @@
     --fonte-principal: 'Times New Roman ', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
     
-    
 }
-
-
-
 
 body {
+
     font-family: Arial, sans-serif;
+    background: url('assets/fondo.png');
     background-color: var(--cor-secundaria);
+    background-size:cover;
+    background-position: center;
     color: var(--cor-terciaria);
     margin: 0;
-    padding: 20px;
+    padding: 0px;
 }
+
+section {
+    background-image: linear-gradient(black,white);
+        }
+
 
 .logo {
     width: 200px; 
@@ -29,7 +34,10 @@ body {
    
 }
 
+
+
 .main-container {
+    
     display: flex;
     justify-content: space-between;
     max-width: 1200px;

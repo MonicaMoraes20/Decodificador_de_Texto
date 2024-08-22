@@ -32,8 +32,6 @@ Se incluye una nota que indica que solo se permiten letras minúsculas y sin ace
 
 La aplicación también presenta un logotipo en la parte superior y una imagen descriptiva en la sección de salida, junto con un aviso de derechos de autor en el pie de página.
 
-
-
 ## 🚀 Tecnologias
 <div>
   <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
